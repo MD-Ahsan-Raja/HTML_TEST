@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Complete CSS Formula</title>
+
+    <style>
+        /* =========================
+   1. RESET / BASIC
+========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* =========================
+   2. BODY & TEXT
+========================= */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* =========================
+   3. TEXT FORMATTING
+========================= */
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            text-align: justify;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+        }
+
+        /* =========================
+   4. COLORS & BACKGROUND
+========================= */
+        .box {
+            color: white;
+            background-color: blue;
+            background-image: url('image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* =========================
+   5. WIDTH / HEIGHT
+========================= */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            min-width: 300px;
+            height: auto;
+            margin: auto;
+        }
+
+        /* =========================
+   6. MARGIN & PADDING
+========================= */
+        .card {
+            margin: 20px;
+            padding: 15px;
+        }
+
+        /* =========================
+   7. BORDER & RADIUS
+========================= */
+        .card {
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        /* =========================
+   8. DISPLAY
+========================= */
+        .inline {
+            display: inline;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .none {
+            display: none;
+        }
+
+        /* =========================
+   9. POSITION
+========================= */
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        /* =========================
+   10. FLOAT & CLEAR
+========================= */
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* =========================
+   11. FLEXBOX
+========================= */
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* =========================
+   12. GRID
+========================= */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        /* =========================
+   13. OVERFLOW
+========================= */
+        .scroll {
+            overflow: auto;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        /* =========================
+   14. OPACITY & VISIBILITY
+========================= */
+        .fade {
+            opacity: 0.5;
+        }
+
+        .hide {
+            visibility: hidden;
+        }
+
+        /* =========================
+   15. SHADOW
+========================= */
+        .shadow {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 5px black;
+        }
+
+        /* =========================
+   16. TRANSITION
+========================= */
+        .button {
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: red;
+            transform: scale(1.1);
+        }
+
+        /* =========================
+   17. TRANSFORM
+========================= */
+        .transform {
+            transform: rotate(10deg) scale(1.2) translateX(20px);
+        }
+
+        /* =========================
+   18. ANIMATION
+========================= */
+        @keyframes move {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        .animate {
+            position: relative;
+            animation: move 2s infinite alternate;
+        }
+
+        /* =========================
+   19. CURSOR
+========================= */
+        .pointer {
+            cursor: pointer;
+        }
+
+        /* =========================
+   20. Z-INDEX
+========================= */
+        .layer {
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Complete Formula</h1>
+    <p>Ye file CSS ke almost saare important rules cover karti hai.</p>
+
+</body>
+
+</html>

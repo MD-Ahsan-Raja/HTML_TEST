@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Luxurious Graphics — Shop</title>
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Luxurious Graphics</h1>
+        <p class="tag">Cyber · Digital Design Studio</p>
+      </div>
+      <nav class="main-nav">
+        <a href="AL PROJECT.html">Home</a>
+        <a href="js_page.html">JS Demos</a>
+        <a href="other.html">Other</a>
+      </nav>
+      <div class="cart-pill" id="cart-pill">Cart (<span id="cart-count">0</span>)</div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="hero card">
+      <h2>Premium Digital Assets for your Brand</h2>
+      <p class="lead">Fast turnarounds • High-resolution deliverables • Commercial use included</p>
+      <ul class="features">
+        <li>Custom Logos</li>
+        <li>Poster & Banner Packs</li>
+        <li>Social Media Kits</li>
+        <li>Vector Illustrations</li>
+      </ul>
+      <button id="viewProducts" class="primary">Browse Products</button>
+    </section>
+
+    <aside class="card cart" id="mini-cart">
+      <h3>Your Cart</h3>
+      <div id="cart-items">no item yet</div>
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout" class="primary" disabled>Checkout</button>
+      <p class="muted small">Secure checkout — mock demo only</p>
+    </aside>
+
+    <section class="products card" id="products-section">
+      <h3>Featured Products</h3>
+      <div id="products" class="products-grid"></div>
+    </section>
+
+    <section class="details card" id="details" hidden>
+      <h3>About Luxurious Graphics</h3>
+      <p>We are a cyber-focused digital design shop delivering high-quality graphics for businesses, streamers and creators. Every purchase includes source files, unlimited mockups for 7 days, and commercial licensing.</p>
+      <h4>Why choose us?</h4>
+      <ul>
+        <li>Trusted digital-first workflow</li>
+        <li>Fast delivery & reliable revisions</li>
+        <li>Clear licensing and instant downloads</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <strong>Luxurious Graphics</strong> — Cyber Design Studio</div>
+      <div class="muted small">Contact: hello@luxurious.graphics &middot; 7-day revision policy</div>
+    </div>
+  </footer>
+
+  <!-- Product modal (hidden until used) -->
+
+  <script src="js/shop.js"></script>
+</body>
+</html>

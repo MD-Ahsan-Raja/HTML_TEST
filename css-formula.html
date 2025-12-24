@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CSS Formula Demo — Sirf CSS</title>
+<style>
+:root{
+  --gap: 16px;
+  --accent: #ffd166;
+  --min-card: 220px;
+  --fluid-size: clamp(1rem, 1rem + 1.5vw, 1.25rem);
+  --card-width: calc(var(--min-card) + 24px);
+}
+
+body{font-family:system-ui,Segoe UI,Roboto,Arial;line-height:1.4;margin:0;padding:32px;background:#071022;color:#e6eef8}
+h1{font-size:clamp(1.25rem, 1rem + 2vw, 2rem);margin:0 0 12px}
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-card), 1fr));
+  gap:var(--gap);
+}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:18px;border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.6)
+}
+
+/* width computed using calc */
+.calc-box{width:calc(40% - var(--gap));padding:12px;background:#071428;border-radius:8px}
+
+/* font sizing with calc + var */
+.lead{font-size:var(--fluid-size);color:#94a3b8}
+
+/* accent color */
+.accent{color:var(--accent)}
+
+/* buttons with formula applied to padding */
+.btn{display:inline-block;background:var(--accent);color:#071022;padding:calc(8px + 0.5vw) 12px;border-radius:8px;text-decoration:none;font-weight:700}
+
+/* show code block */
+pre{background:#061127;color:#cfe9ff;padding:12px;border-radius:8px;overflow:auto}
+
+.footer{margin-top:20px;font-size:0.9rem;color:#94a3b8}
+</style>
+</head>
+<body>
+<h1>CSS Formula Demo — Sirf CSS ka formula</h1>
+<p class="lead">Examples using <code>calc()</code>, <code>var()</code> and <code>clamp()</code> — koi JavaScript nahin.</p>
+<div class="grid">
+  <section class="card">
+    <h2>Responsive cards</h2>
+    <div class="calc-box">Width: <strong>calc(40% - var(--gap))</strong></div>
+    <p>Grid uses <code>minmax(var(--min-card), 1fr)</code> so cards stay readable.</p>
+  </section>
+
+  <section class="card">
+    <h2>Fluid type</h2>
+    <p class="lead">Font-size: <strong>clamp(1rem, 1rem + 1.5vw, 1.25rem)</strong></p>
+    <a class="btn" href="#">Primary</a>
+  </section>
+
+  <section class="card">
+    <h2>Color & spacing</h2>
+    <p class="accent">Accent color from a variable and padding computed with <code>calc()</code>.</p>
+  </section>
+
+  <section class="card">
+    <h2>CSS snippet</h2>
+    <pre>
+:root{
+  --gap:16px;
+  --min-card:220px;
+  --fluid-size:clamp(1rem, 1rem + 1.5vw, 1.25rem);
+}
+.card{width:calc(40% - var(--gap));}
+    </pre>
+  </section>
+</div>
+
+<p class="footer">Open this file in a browser to see responsive behavior. — GitHub Copilot</p>
+</body>
+</html>
